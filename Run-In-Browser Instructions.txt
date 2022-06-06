@@ -1,0 +1,21 @@
+Game.exe will run the game in a standalone window. However, if you don't want to or can't run it, it is also possible to run the game locally in a browser with some effort.
+Simply opening index.html in the www folder will likely not work; instead, you must run the game using localhost.
+
+A simple way to start a localhost session is by using Python. Download and install it here.
+https://www.python.org/downloads/
+
+Once Python is installed, open Command Prompt or equivalent (Terminal in Mac OS).
+
+Navigate to the game's "www" folder. (Example: cd "C:/Users/Default/Desktop/YourTimeToShine/www")
+
+Enter this command to start a localhost server based in the current directory:
+python -m http.server
+It should show a message like "Serving HTTP on [IP address] port [number]..."
+
+Finally, open the following URL in your browser.
+http://localhost:8000/
+(The port number it tells you should be 8000 by default, but if it's not, replace "8000" in this URL with that number.)
+
+You should keep the server console running while you play, and can close it once you're done.
+
+NOTE: When playing this way, save data will be stored in your browser's Local Storage for "localhost:8000" (or whatever the port is), rather than as files in the "save" folder.
